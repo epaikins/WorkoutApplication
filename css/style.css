@@ -18,7 +18,8 @@ body {
 }
 
 .nav ul li:hover {
-  background-color: wheat;
+  background-color: tomato;
+  color: whitesmoke;
 }
 
 .image-area img {
@@ -93,6 +94,52 @@ body {
   background-color: white;
   border: 1px solid tomato;
   margin: 5px;
+}
+
+.subscription-area {
+  background-color: tomato;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.subscription-area h2 {
+  color: whitesmoke;
+  font-size: 35px;
+  padding-top: 50px;
+  margin: 0px;
+}
+
+.subscription-area p {
+  color: whitesmoke;
+  font-size: 10px;
+}
+
+.subscription-area input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 200px;
+  display: block;
+}
+
+.subscription-area input[type="button"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.subscription-area input:focus {
+  outline: none;
+}
+
+.subscription-area form {
+  display: inline-block;
 }
 
 @media screen and (min-width: 700px) {
