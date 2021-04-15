@@ -11,13 +11,17 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px;
+  font-size: 0px;
 }
 
 .nav ul li {
   padding: 10px;
+  font-size: 1.2rem;
+  color: tomato;
 }
 
 .nav ul li:hover {
+  cursor: pointer;
   background-color: tomato;
   color: whitesmoke;
 }
@@ -52,6 +56,16 @@ body {
   background-color: tomato;
 }
 
+.image-area-text input:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .program-head h2 {
   text-align: center;
 }
@@ -63,11 +77,12 @@ body {
 }
 
 .single-program {
-  border: 2px solid tomato;
+  box-shadow: 2px 2px 20px 0.1px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   text-align: center;
   padding: 0px;
-  margin: 5px;
+  margin: 20px;
+  width: 250px;
 }
 
 .single-program h2 {
@@ -80,6 +95,7 @@ body {
 
 .single-program img {
   text-align: center;
+  margin-top: 20px;
   width: 50px;
   height: 50px;
 }
@@ -93,7 +109,13 @@ body {
   border-radius: 10px;
   background-color: white;
   border: 1px solid tomato;
-  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.single-program input:hover {
+  cursor: pointer;
+  background-color: tomato;
+  color: whitesmoke;
 }
 
 .subscription-area {
@@ -106,14 +128,14 @@ body {
 
 .subscription-area h2 {
   color: whitesmoke;
-  font-size: 35px;
+  font-size: 25px;
   padding-top: 50px;
   margin: 0px;
 }
 
 .subscription-area p {
   color: whitesmoke;
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .subscription-area input[type="text"] {
@@ -134,26 +156,76 @@ body {
   margin-bottom: 10px;
 }
 
+.subscription-area input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 .subscription-area input:focus {
   outline: none;
 }
 
 .subscription-area form {
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 700px) {
+  .nav ul li {
+    display: inline-block;
+  }
+
   .image-area img {
     height: 300px;
   }
 
   .image-area-text {
-    top: 16rem;
+    top: 5rem;
     left: 2rem;
   }
 
   .programs-area {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .single-program {
+    width: 400px;
+  }
+
+  .single-program h2 {
+    font-size: 20px;
+  }
+
+  .single-program p {
+    font-size: 10px;
+  }
+
+  .single-program input {
+    font-size: 15px;
+  }
+
+  .single-program img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .subscription-area h2 {
+    color: whitesmoke;
+    font-size: 40px;
+  }
+
+  .subscription-area p {
+    color: whitesmoke;
+    font-size: 15px;
+  }
+
+  .subscription-area input[type="text"] {
+    font-size: 20px;
+    width: 300px;
+    display: inline-block;
+  }
+  .subscription-area input[type="submit"] {
+    display: inline-block;
+    font-size: 20px;
   }
 }
 
@@ -163,8 +235,9 @@ body {
   }
 
   .image-area-text {
-    top: 15rem;
+    top: 3rem;
     left: 5rem;
+    width: 800px;
   }
   .image-area-text p {
     font-size: 20px;
@@ -176,10 +249,53 @@ body {
   }
 
   .image-area-text h2 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   .programs-area {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .single-program {
+    width: 350px;
+  }
+
+  .single-program h2 {
+    font-size: 30px;
+  }
+
+  .single-program p {
+    font-size: 15px;
+  }
+
+  .single-program input {
+    font-size: 20px;
+  }
+
+  .single-program img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .subscription-area h2 {
+    color: whitesmoke;
+    font-size: 50px;
+    padding-top: 50px;
+    margin: 0px;
+  }
+
+  .subscription-area p {
+    color: whitesmoke;
+    font-size: 15px;
+  }
+
+  .subscription-area input[type="text"] {
+    font-size: 20px;
+    width: 500px;
+    display: inline-block;
+  }
+  .subscription-area input[type="submit"] {
+    display: inline-block;
+    font-size: 20px;
   }
 }
